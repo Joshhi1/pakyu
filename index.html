@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>chillikers</title>
+  <title>Facebook Auto React</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
@@ -72,43 +72,42 @@
 </head>
 <body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen flex items-center justify-center px-4 font-sans transition-all duration-500">
   <div class="popup" id="popup">
-    <h2 class="text-4xl font-semibold">Hi Love</h2>
-    <div class="ayieee left">Ayieee</div>
-    <div class="ayieee right">Ayieee</div>
+    <h2 class="text-4xl font-semibold">hi user, welcome<br>(≧▽≦)</h2>
   </div>
 
   <div class="bg-white dark:bg-gray-800 p-8 rounded shadow-lg w-full max-w-md">
-    <h1 class="text-3xl font-bold mb-2 text-center">FB Boost React</h1>
-    <p style="text-align: center;">This tool is created by: churchillitos 𝘤𝘳𝘦𝘥𝘪𝘵𝘴:Ryo</p>
-    <p class="text-center text-sm mb-6 text-gray-600 dark:text-gray-300">Boost reactions on your Facebook post with ease!</p>
+    <h1 class="text-3xl font-bold mb-2 text-center">𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸 𝗔𝘂𝘁𝗼 𝗥𝗲𝗮𝗰𝘁</h1>
+    <p style="text-align: center;">𝐓𝐡𝐢𝐬 𝐭𝐨𝐨𝐥 𝐢𝐬 𝐜𝐫𝐞𝐚𝐭𝐞𝐝 𝐛𝐲: 𝐯𝐢𝐱𝐞𝐞𝐧𝐧 (𝐜𝐜𝐭𝐨 𝐬𝐚 𝐀𝐏𝐈)</p>
+    <p class="text-center text-sm mb-6 text-green-600 dark:text-green-300">𝗕𝗼𝗼𝘀𝘁 𝗿𝗲𝗮𝗰𝘁𝗶𝗼𝗻𝘀 𝗼𝗻 𝘆𝗼𝘂𝗿 𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸 𝗽𝗼𝘀𝘁 𝘄𝗶𝘁𝗵 𝗲𝗮𝘀𝗲!</p>
     <form id="boost-form" class="space-y-6" novalidate>
       <div>
-        <label for="fb_cookie" class="block text-sm font-medium mb-2">Cookie:</label>
+        <label for="fb_cookie" class="block text-sm font-medium mb-2">𝗖𝗢𝗢𝗞𝗜𝗘𝗦</label>
         <input type="text" id="fb_cookie" name="fb_cookie" class="block w-full p-3 border border-gray-300 rounded dark:bg-gray-700 dark:border-gray-600 focus:ring-2 focus:ring-blue-500 focus:outline-none" maxlength="1000" required>
         <p id="cookie-error" class="text-red-500 text-xs mt-2 hidden">This field is required.</p>
         <p id="cookie-counter" class="text-gray-500 text-xs mt-2 text-right">0/1000</p>
       </div>
       <div>
-        <label for="post_link" class="block text-sm font-medium mb-2">Post Link:</label>
+        <label for="post_link" class="block text-sm font-medium mb-2">𝗣𝗢𝗦𝗧 𝗨𝗥𝗟</label>
         <input type="url" id="post_link" name="post_link" class="block w-full p-3 border border-gray-300 rounded dark:bg-gray-700 dark:border-gray-600 focus:ring-2 focus:ring-blue-500 focus:outline-none" maxlength="500" required>
         <p id="link-error" class="text-red-500 text-xs mt-2 hidden">This field is required and must be a valid URL.</p>
         <p id="link-counter" class="text-gray-500 text-xs mt-2 text-right">0/500</p>
       </div>
       <div>
-        <label for="reaction_type" class="block text-sm font-medium mb-2">Reaction:</label>
+        <label for="reaction_type" class="block text-sm font-medium mb-2">𝗥𝗘𝗔𝗖𝗧𝗜𝗢𝗡 𝗧𝗬𝗣𝗘</label>
         <select id="reaction_type" name="reaction_type" class="block w-full p-3 border border-gray-300 rounded dark:bg-gray-700 dark:border-gray-600 focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
-          <option value="">Select a reaction</option>
-          <option value="LIKE">Like</option>
-          <option value="LOVE">Love</option>
-          <option value="HAHA">Haha</option>
-          <option value="WOW">Wow</option>
-          <option value="SAD">Sad</option>
-          <option value="ANGRY">Angry</option>
+          <option value="">» 𝗦𝗘𝗘 𝗛𝗘𝗥𝗘 «</option>
+          <option value="LIKE">LIKE (👍)</option>
+          <option value="LOVE">LOVE (❤️)</option>
+          <option value="CARE">CARE (🤗)</option>
+          <option value="HAHA">HAHA (😆)</option>
+          <option value="WOW">WOW (😮)</option>
+          <option value="SAD">SAD (😢)</option>
+          <option value="ANGRY">ANGRY (😠)</option>
         </select>
         <p id="reaction-error" class="text-red-500 text-xs mt-2 hidden">This field is required.</p>
       </div>
-      <button id="submit-button" type="submit" class="bg-blue-500 text-white font-semibold py-2 px-4 rounded w-full">Boost React</button>
-      <button id="reset-button" type="reset" class="bg-gray-300 text-gray-700 font-semibold py-2 px-4 rounded w-full mt-2">Reset</button>
+      <button id="submit-button" type="submit" class="bg-green-700 text-white font-semibold py-2 px-4 rounded w-full">𝗦𝗨𝗕𝗠𝗜𝗧</button>
+      <button id="reset-button" type="reset" class="bg-red-300 text-gray-700 font-semibold py-2 px-4 rounded w-full mt-2">𝗖𝗟𝗘𝗔𝗥</button>
     </form>
     <div id="result" class="mt-4 p-4 rounded hidden"></div>
   </div>
@@ -171,7 +170,7 @@
       const reaction_type = reactionSelect.value;
 
       resultDiv.classList.remove('hidden');
-      resultDiv.innerText = 'Processing...';
+      resultDiv.innerText = 'SENDING REACTION, PLEASE WAIT...';
 
       try {
         const response = await fetch('/react', {
